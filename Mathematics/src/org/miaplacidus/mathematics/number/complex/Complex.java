@@ -321,7 +321,7 @@ public class Complex extends Object implements Serializable, Arithmetic<Complex>
     */
     
     /**
-     * The addition of complex numbers.
+     * The complex addition.
      * @param addend the complex number that is added to this augend.
      * @return a complex number that is the sum of the augend and the addend.
      */
@@ -400,7 +400,7 @@ public class Complex extends Object implements Serializable, Arithmetic<Complex>
      * @param exponent the complex number that determines the power the base is to.
      * @return a complex number that is the power of the base and the exponent.
      */
-    public Complex exponentiate(final Complex exponent){
+    public Complex exponentiate(final Complex exponent) {
         return this.logarithm().multiply(exponent).exponentiate();
     }
     
@@ -409,7 +409,7 @@ public class Complex extends Object implements Serializable, Arithmetic<Complex>
      * @param exponent the real number that determines the power the base is to.
      * @return a complex number that is the power of the base and the exponent.
      */
-    public Complex exponentiate(final double exponent){
+    public Complex exponentiate(final double exponent) {
         return this.logarithm().multiply(exponent).exponentiate();
     }
     
